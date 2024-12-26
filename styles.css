@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    /* Primary Colors */
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+
+    /* Neutral */
+    --dark-gray-red: hsl(0, 6%, 24%);
+
+    /* Gradients */
+
+    --first-gradient-col1: hsl(0, 0%, 100%);
+    --first-gradient-col2: hsl(0, 100%, 98%);
+    --second-gradient-col1: hsl(0, 80%, 86%);
+    --second-gradient-col2: hsl(0, 74%, 74%);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", serif;
+    background-image: linear-gradient(135deg, var(--first-gradient-col1), var(--first-gradient-col2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: min(100% - 2rem, 375px);
+    transition: 350ms ease-in-out;
+    margin: 0 auto;
+}
+
+.section__desktop-image {
+    display: none;
+}
+
+.container__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 2rem 0;
+}
+
+.container__logo-image {
+    width: 45%;
+    padding: 2rem;
+}
+
+.container__hero-image {
+    padding-bottom: 2rem;
+}
+
+.section__heading {
+    font-size: 3em;
+    padding: 2rem;
+    text-align: center;
+}
+
+.section__highlight {
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+.section__description {
+    color: var(--desaturated-red);
+    padding: 0 2rem 2rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+.section__form {
+    border-radius: 3rem;
+    border: 1px solid var(--desaturated-red);
+}
+
+.section__form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__mail-input {
+    padding: .75rem 1rem;
+    border: 1px solid var(--dark-gray-red);
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.section__mail-input::placeholder {
+    color: var(--desaturated-red);
+    font-family: "Josefin Sans", serif;
+    opacity: .5;
+    font-weight: 400;
+}
+
+.section__submit-button {
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    padding: .75rem 1.5rem;
+    background-image: linear-gradient(135deg, var(--second-gradient-col1), var(--second-gradient-col2));
+}
+
+.section__submit-button:active {
+    box-shadow: 0px 0px 62px -10px rgba(0,0,0,0.75);
+    opacity: .5;
+}
+
+.section__submit-button--arrow {
+    width: 100%;
+}
+
+.section__mail-input--error-icon {
+    display: none;
+    padding: .5rem;
+}
+
+.section__mail-input--error {
+    display: none;
+    padding: 1rem;
+    color: var(--soft-red);
+}
