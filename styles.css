@@ -24,14 +24,14 @@
 
 body {
     font-family: "Josefin Sans", serif;
-    background-image: linear-gradient(135deg, var(--first-gradient-col1), var(--first-gradient-col2));
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
-    width: min(100% - 2rem, 375px);
+    width: min(100% - 1rem, 375px);
     transition: 350ms ease-in-out;
     margin: 0 auto;
 }
@@ -44,13 +44,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     padding: 0 0 2rem 0;
 }
 
 .container__logo-image {
-    width: 45%;
-    padding: 2rem;
+    max-width: 80%;
+    padding: 1rem 0;
 }
 
 .container__hero-image {
@@ -58,6 +58,7 @@ body {
 }
 
 .section__heading {
+    letter-spacing: 12px;
     font-size: 3em;
     padding: 2rem;
     text-align: center;
@@ -73,24 +74,24 @@ body {
     padding: 0 2rem 2rem;
     text-align: center;
     font-weight: 400;
-    font-size: .9em;
+    font-size: .8em;
     line-height: 1.5em;
 }
 
 .section__form {
     border-radius: 3rem;
     border: 1px solid var(--desaturated-red);
+    margin: 0 auto;
 }
 
 .section__form-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 0.5rem;
 }
 
 .section__mail-input {
-    padding: .75rem 1rem;
-    border: 1px solid var(--dark-gray-red);
+    padding: 0.75rem 1rem;
     border-radius: 3rem;
     border: none;
     outline: none;
@@ -130,4 +131,54 @@ body {
     display: none;
     padding: 1rem;
     color: var(--soft-red);
+}
+
+
+@media (min-width: 1050px) {
+  .container {
+    width: min(100% - 2rem, 1000px);
+    transition: 350ms ease-in-out;
+  }
+
+  .section__container {
+    display: flex;
+  }
+
+  .container__content {
+    margin: 5rem;
+    width: 500px;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .section__desktop-image {
+    display: block;
+  }
+
+  .section__hero-image--desktop {
+    display: block;
+    width: 100%;
+  }
+
+  .container__hero-image {
+    display: none;
+  }
+
+  .section__heading {
+    font-size: 4rem;
+  }
+
+  .section__heading, .section__description  {
+    text-align: left;
+    padding: 2rem 0;
+  }
+
+  .section__description {
+    padding: 0 0 2rem;
+  }
+
+  .section__form {
+    margin: 0;
+  }
+
 }
