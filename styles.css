@@ -84,6 +84,10 @@ body {
     margin: 0 auto;
 }
 
+.section__form.error {
+  border: 1px solid red;
+}
+
 .section__form-container {
     display: flex;
     align-items: center;
@@ -123,14 +127,22 @@ body {
 }
 
 .section__mail-input--error-icon {
-    display: none;
-    padding: .5rem;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0.5rem;
+  transition: opacity 300ms ease-in, visibility 300ms ease-in;
+}
+
+.section__mail-input--error-icon.show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .section__mail-input--error {
     display: none;
     padding: 1rem;
     color: var(--soft-red);
+    margin: 0 auto;
 }
 
 
@@ -178,6 +190,10 @@ body {
   }
 
   .section__form {
+    margin: 0;
+  }
+
+  .section__mail-input--error {
     margin: 0;
   }
 
