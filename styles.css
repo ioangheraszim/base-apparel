@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    width: min(100% - 1rem, 375px);
+    width: min(100% - 1rem, 365px);
     transition: 350ms ease-in-out;
     margin: 0 auto;
 }
@@ -54,12 +54,13 @@ body {
 }
 
 .container__logo-image {
-    max-width: 80%;
+    width: 80%;
     padding: 2rem 2rem;
 }
 
 .container__hero-image {
-    padding-bottom: 2rem;
+  max-width: 100%;
+  padding-bottom: 2rem;
 }
 
 .section__heading {
