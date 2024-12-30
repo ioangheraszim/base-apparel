@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Base Apparel Solution](https://github.com/ioangheraszim/base-apparel)
+- Live Site URL: [Base Apparel Live](https://ioangheraszim.github.io/base-apparel/)
 
 ## My process
 
@@ -54,5 +54,5 @@ Moving onwards, i have to refresh my javascript skills and continue doing more p
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Ioan Gheraszim](https://ioangheraszim.github.io/portofolio/)
 - Frontend Mentor - [@ioangheraszim](https://www.frontendmentor.io/profile/ioangheraszim)
